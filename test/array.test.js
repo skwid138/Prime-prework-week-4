@@ -1,5 +1,6 @@
 var chai = require('chai');
-var arrays = require('../assignment/arrays.assignment');
+// var arrays = require('../assignment/arrays.assignment');
+var arrays = require('../open-sesame/arrays.solution');
 
 describe('Testing Array Review', function() {
   describe('the createArray function', function() {
