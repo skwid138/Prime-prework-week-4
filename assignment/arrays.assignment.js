@@ -4,33 +4,38 @@ Array Review
 
 function createArray() {
   // create an array with 6 elements (numbers and strings only)
-  // Write code below
+  var myArray = [1, 3, 5, 5, 900, 8.8];
 
   // return this array
   return myArray;
 }
 
 function loopArray(array) {
-  // used below
+  // set up our array
+  // var myArray = createArray();
   var conString = '';
-  // Write code here: Concatentate all of the values in array together using a loop
 
+  // concatentate all the values together using a loop
+  // write code here
+  for(var i = 0; i < array.length; i++) {
+    conString += array[i];
+  }
 
   // return concatentated values
   return conString;
 }
 
-
-function arrayReverser(arrayParam) {
-  // Copy items from arrayParam to a new array called reversedArray, reversing the order of elements
-  // Last element on arrayParam should become the first in reversedArray
-  // Do not use Array.reverse()!
-
-  // Write the code here
-
+// implement array reverser function
+function arrayReverser(arr) {
+  // copy items from arr to revArray in reverse order.
+  // write the code here
+  var revArray = [];
+  for (var i = arr.length - 1; i >= 0; i--) {
+    revArray.push(arr[i]);
+  }
 
   // return our reversed array
-  return reversedArray;
+  return revArray;
 }
 
 // call and console log the return for loopArray and arrayReverser

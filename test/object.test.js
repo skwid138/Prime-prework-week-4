@@ -1,6 +1,5 @@
 var chai = require('chai');
-// var objects = require('../assignment/objects.assignment');
-var objects = require('../open-sesame/objects.solution');
+var objects = require('../assignment/objects.assignment');
 var sinon = require('sinon');
 
 describe('Testing Object Review', function() {
