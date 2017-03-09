@@ -4,7 +4,7 @@ Array Review
 
 function createArray() {
   // create an array with 6 elements (numbers and strings only)
-  var myArray = [1, 3, 5, 5, 900, 8.8];
+  var myArray = [1, 3, 5, 'dog', 900, 8.8];
 
   // return this array
   return myArray;

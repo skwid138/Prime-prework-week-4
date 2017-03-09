@@ -61,7 +61,7 @@ function fixLiteralSyntax() {
 Object Constructors
 **/
 
-// Write a constructor function to create Book objects with the same properties as above.
+// Write a constructor function to create 'Book' objects with the same properties as above.
 function Book(title, author, pageCount, haveRead) {
   this.title = title;
   this.author = author;
@@ -69,7 +69,7 @@ function Book(title, author, pageCount, haveRead) {
   this.haveRead = haveRead;
 }
 
-// Create 3 new books using this constructor function. Store them in an array.
+// Create 3 new 'Book' objects using this constructor function. Store them in an array.
 function createBooksWithConstructor() {
   var book1 = new Book("test", "someone", 200, true);
   var book2 = new Book("test2", "someone else", 300, true);

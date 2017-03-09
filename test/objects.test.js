@@ -17,6 +17,10 @@ describe('basemode Testing Object Review', function() {
       chai.expect(books[0]).to.have.ownProperty('pageCount');
       chai.expect(books[0]).to.have.ownProperty('haveRead');
     });
+    it('should have number value for pageCount property', function() {
+      var books = objects.threeBooks();
+      chai.expect(books[0].pageCount).to.be.a('number');
+    });
     it('should have boolean value for haveRead property', function() {
       var books = objects.threeBooks();
       chai.expect(books[0].haveRead).to.be.a('boolean');
@@ -96,6 +100,14 @@ describe('basemode Testing Object Review', function() {
       chai.expect(books[0]).to.have.ownProperty('author');
       chai.expect(books[0]).to.have.ownProperty('pageCount');
       chai.expect(books[0]).to.have.ownProperty('haveRead');
+    });
+    it('should have number value for pageCount property', function() {
+      var books = objects.createBooksWithConstructor();
+      chai.expect(books[1].pageCount).to.be.a('number');
+    });
+    it('should have boolean value for haveRead property', function() {
+      var books = objects.threeBooks();
+      chai.expect(books[1].haveRead).to.be.a('boolean');
     });
   });
 
