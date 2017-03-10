@@ -46,7 +46,7 @@ function fixLiteralSyntax() {
 
   // write fixed code here
   var hiddenFiguresMovie = {
-      name: Hidden Figures,
+      name: "Hidden Figures",
       runTime: 127,
       releaseYear: 2016,
       director: "Theodore Melfi"
