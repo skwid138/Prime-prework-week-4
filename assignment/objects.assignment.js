@@ -36,24 +36,24 @@ function threeBooks() {
 function fixLiteralSyntax() {
   // Fix the problems with our object literal
   /**
-  avengersMovie = {
-      name : Avengers;
-      runtime : 143 mins;
-      releaseYear = 2012;
-      "Director" : "Joss Whedon".
+  hiddenFiguresMovie = {
+      name : Hidden Figures;
+      runtime : 127 mins;
+      releaseYear = 2016;
+      "Director" : "Theodore Melfi".
   }
   **/
 
   // write fixed code here
-  var avengersMovie = {
-      name: 'Avengers',
-      runTime: 143,
-      releaseYear: "2012",
-      director: "Joss Whedon"
+  var hiddenFiguresMovie = {
+      name: Hidden Figures,
+      runTime: 127,
+      releaseYear: 2016,
+      director: "Theodore Melfi"
   };
 
   // return corrected object
-  return avengersMovie;
+  return hiddenFiguresMovie;
 }
 
 
