@@ -89,13 +89,25 @@ describe('basemode Testing Object Review', function() {
   // });
 
   describe('the createBooksWithConstructor function', function() {
+
+      var constructorSpy = sinon.spy(Book);
+      constructorSpy()
+
+
     //TODO:Get this test to work with spy. It worked before adding Karma.
-    // it('should call the Book constructor 3 times', function() {
-    //   var books = createBooksWithConstructor();
-    //
-    //   // sinon spy counts the number of times the constructor was called
-    //   chai.expect(constructorSpy.calledThrice).to.be.true;
-    // });
+    it('should call the Book constructor 3 times', function() {
+      createBooksWithConstructor();
+    // spy.calledWithNew();
+
+    // assert(constructorSpy.calledWithNew());
+    constructorSpy.should.have.been.calledWithNew
+    // expect(constructorSpy.calledWithNew()).to.be.true
+      // sinon spy counts the number of times the constructor was called
+      // constructorSpy.should.have.been.calledWithNew
+      // chai.expect(constructorSpy.calledWithNew()).to.be.true;
+      constructorSpy.restore();
+    });
+
 
     it('should return 3 objects in an array', function() {
       var books = createBooksWithConstructor();
