@@ -95,7 +95,7 @@ describe('basemode Testing Object Review', function() {
 
 
     //TODO:Get this test to work with spy. It worked before adding Karma.
-    it('should call the Book constructor 3 times', function() {
+    it('should call the Book constructor with new 3 times', function() {
       createBooksWithConstructor();
     // spy.calledWithNew();
 
