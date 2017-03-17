@@ -47,7 +47,7 @@ function fixLiteralSyntax() {
   // write fixed code here
   var hiddenFiguresMovie = {
       name: "Hidden Figures",
-      runTime: 127,
+      runtime: 127,
       releaseYear: 2016,
       director: "Theodore Melfi"
   };
@@ -60,21 +60,14 @@ function fixLiteralSyntax() {
 /**
 Object Constructors
 **/
-
-
-// Write a constructor function to create 'Book' objects with the same properties as above.
+// Write a constructor function to create 'Book' objects with the same four properties as above.
+// Write the constructor function here:
 function Book(title, author, pageCount, haveRead) {
   this.title = title;
   this.author = author;
   this.pageCount = pageCount;
   this.haveRead = haveRead;
 }
-
-// Write a constructor function to create 'Book' objects with the same four properties as above.
-// Write the constructor function here:
-
-
-
 
 // Create 3 new 'Book' objects using this constructor function. Store them in an array.
 function createBooksWithConstructor() {
@@ -86,17 +79,8 @@ function createBooksWithConstructor() {
   // In this function, create 3 new 'Book' objects by using the constructor function you wrote above.
   // Write code here:
 
-
   var books = [book1, book2, book3];
 
   // return our array of books
   return books;
 }
-
-// -- DON'T TOUCH CODE BELOW --
-// module.exports = {
-//   threeBooks: threeBooks,
-//   fixLiteralSyntax: fixLiteralSyntax,
-//   Book: Book,
-//   createBooksWithConstructor: createBooksWithConstructor
-// };

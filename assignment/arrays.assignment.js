@@ -1,7 +1,6 @@
 /**
 Array Review
 **/
-
 function createArray() {
   // create an array with 6 elements (numbers and strings only)
   var myArray = [1, 3, 5, 'dog', 900, 8.8];
@@ -39,10 +38,3 @@ function arrayReverser(arr) {
 }
 
 // call and console log the return for loopArray and arrayReverser
-
-// -- DON'T TOUCH CODE BELOW --
-// module.exports = {
-//   createArray: createArray,
-//   loopArray: loopArray,
-//   arrayReverser: arrayReverser
-// };
