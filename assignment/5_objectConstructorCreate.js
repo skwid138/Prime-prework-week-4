@@ -5,7 +5,7 @@ function Book(title, author, pageCount, haveRead) {
   // Write code here
   this.title = title;
   this.author = author;
-  this.pageCoiunt = pageCount;
+  this.pageCount = pageCount;
   this.haveRead = haveRead;
 }
 

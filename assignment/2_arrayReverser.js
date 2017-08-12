@@ -4,8 +4,8 @@ function arrayReverser(arr) {
   // Do not use Array.reverse()!
   var reversedArray = [];
   // Write the code here
-  for (let i = arr.length - 1; i >= 0; i --) {
-    reversedArray += arr[i];
+  for (var i = arr.length - 1; i >= 0; i --) {
+    reversedArray.push(arr[i]);
   }
   // return our reversed array
   return reversedArray;
